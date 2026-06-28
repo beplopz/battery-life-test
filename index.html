@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b1120" />
+    <meta
+      name="description"
+      content="Topic 15 Battery Life Test website with a flowchart, schematic diagram, and comparison table optimized for desktop and cellphone viewing."
+    />
+    <title>Battery Life Test | Topic 15</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="nav" aria-label="Page sections">
+        <a href="#flowchart">Flowchart</a>
+        <a href="#schematic">Schematic</a>
+        <a href="#table">Comparison Table</a>
+      </nav>
+      <div class="hero-content">
+        <p class="eyebrow">Topic 15 • Battery Life Test</p>
+        <h1>Measuring laptop battery life across usage scenarios</h1>
+        <p class="hero-copy">
+          A visual guide for testing laptop battery performance, comparing power consumption with a desktop computer,
+          and turning observations into a clear, evidence-based report.
+        </p>
+        <div class="hero-cards" aria-label="Key test outputs">
+          <span>Usage scenarios</span>
+          <span>Battery runtime</span>
+          <span>Power consumption</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="intro section-card">
+        <div>
+          <p class="section-label">Objective</p>
+          <h2>What this website shows</h2>
+        </div>
+        <p>
+          Partners can measure how long a laptop lasts under common activities such as idle work, browsing, video
+          playback, gaming, and productivity tasks. The results are compared against a desktop computer's power draw to
+          explain energy efficiency and practical use.
+        </p>
+      </section>
+
+      <section id="flowchart" class="section-card">
+        <div class="section-heading">
+          <p class="section-label">Deliverable 1</p>
+          <h2>Battery life test flowchart</h2>
+          <p>Follow these steps to collect consistent runtime and power-use data.</p>
+        </div>
+
+        <div class="flowchart" role="list" aria-label="Battery life testing process">
+          <article class="flow-step" role="listitem">
+            <span class="step-number">1</span>
+            <h3>Prepare devices</h3>
+            <p>Fully charge the laptop, plug in the desktop, close unnecessary apps, and set matching brightness.</p>
+          </article>
+          <article class="flow-step" role="listitem">
+            <span class="step-number">2</span>
+            <h3>Select scenarios</h3>
+            <p>Choose idle, web browsing, video playback, productivity, and high-performance workload tests.</p>
+          </article>
+          <article class="flow-step" role="listitem">
+            <span class="step-number">3</span>
+            <h3>Run each test</h3>
+            <p>Start the timer, perform the selected activity, and monitor the laptop battery percentage.</p>
+          </article>
+          <article class="flow-step" role="listitem">
+            <span class="step-number">4</span>
+            <h3>Record readings</h3>
+            <p>Log elapsed time, remaining battery, laptop settings, and desktop wattage from a power meter.</p>
+          </article>
+          <article class="flow-step" role="listitem">
+            <span class="step-number">5</span>
+            <h3>Compare results</h3>
+            <p>Calculate energy use, compare laptop runtime with desktop power draw, and identify efficient scenarios.</p>
+          </article>
+          <article class="flow-step" role="listitem">
+            <span class="step-number">6</span>
+            <h3>Conclude</h3>
+            <p>Summarize which tasks drain the battery fastest and recommend settings that extend battery life.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="schematic" class="section-card">
+        <div class="section-heading">
+          <p class="section-label">Deliverable 2</p>
+          <h2>Schematic diagram</h2>
+          <p>The setup below shows how the laptop test data and desktop comparison data are gathered.</p>
+        </div>
+
+        <div class="schematic" aria-label="Schematic diagram of battery life test setup">
+          <div class="device laptop">
+            <div class="screen">Laptop<br /><small>Battery test unit</small></div>
+            <div class="base"></div>
+          </div>
+          <div class="connector">
+            <span>runtime + battery %</span>
+          </div>
+          <div class="meter">
+            <span class="meter-icon">⚡</span>
+            <strong>Data Sheet</strong>
+            <small>Time • % drain • workload</small>
+          </div>
+          <div class="connector desktop-line">
+            <span>wattage reading</span>
+          </div>
+          <div class="device desktop">
+            <div class="monitor">Desktop PC</div>
+            <div class="tower"></div>
+          </div>
+          <div class="wall-meter">
+            <strong>Power Meter</strong>
+            <small>Watts from outlet</small>
+          </div>
+        </div>
+      </section>
+
+      <section id="table" class="section-card">
+        <div class="section-heading">
+          <p class="section-label">Deliverable 3</p>
+          <h2>Sample comparison table</h2>
+          <p>Use this format to record actual class results and compare energy demand across scenarios.</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Usage scenario</th>
+                <th>Laptop battery change</th>
+                <th>Estimated laptop runtime</th>
+                <th>Desktop power consumption</th>
+                <th>Observation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-label="Usage scenario">Idle / standby</td>
+                <td data-label="Laptop battery change">Slow drain</td>
+                <td data-label="Estimated laptop runtime">8–12 hours</td>
+                <td data-label="Desktop power consumption">45–80 W</td>
+                <td data-label="Observation">Best case for laptop battery life.</td>
+              </tr>
+              <tr>
+                <td data-label="Usage scenario">Web browsing</td>
+                <td data-label="Laptop battery change">Moderate drain</td>
+                <td data-label="Estimated laptop runtime">5–8 hours</td>
+                <td data-label="Desktop power consumption">80–140 W</td>
+                <td data-label="Observation">Brightness and open tabs affect results.</td>
+              </tr>
+              <tr>
+                <td data-label="Usage scenario">Video playback</td>
+                <td data-label="Laptop battery change">Moderate drain</td>
+                <td data-label="Estimated laptop runtime">4–7 hours</td>
+                <td data-label="Desktop power consumption">90–160 W</td>
+                <td data-label="Observation">Efficient playback uses less energy than gaming.</td>
+              </tr>
+              <tr>
+                <td data-label="Usage scenario">Productivity apps</td>
+                <td data-label="Laptop battery change">Medium to fast drain</td>
+                <td data-label="Estimated laptop runtime">3–6 hours</td>
+                <td data-label="Desktop power consumption">100–180 W</td>
+                <td data-label="Observation">Office tasks vary based on multitasking.</td>
+              </tr>
+              <tr>
+                <td data-label="Usage scenario">Gaming / heavy load</td>
+                <td data-label="Laptop battery change">Fast drain</td>
+                <td data-label="Estimated laptop runtime">1–3 hours</td>
+                <td data-label="Desktop power consumption">200–500 W</td>
+                <td data-label="Observation">CPU and GPU demand sharply increases power use.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Battery Life Test • Topic 15 • Flowchart, schematic diagram, and table</p>
+    </footer>
+  </body>
+</html>
